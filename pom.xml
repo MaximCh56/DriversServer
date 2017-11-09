@@ -17,7 +17,18 @@
                     <target>1.7</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <warSourceDirectory>src/main/</warSourceDirectory>
+                    <warName>Spring4MVCHelloWorldRestServiceDemo</warName>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
         </plugins>
+        <finalName>Spring4MVCRest</finalName>
     </build>
 
 <dependencies> <dependency>
