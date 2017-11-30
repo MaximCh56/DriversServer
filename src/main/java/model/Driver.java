@@ -1,8 +1,6 @@
 package model;
 
-import org.springframework.stereotype.Component;
 
-@Component
 public class Driver {
     private String uuid;
     private String name;
